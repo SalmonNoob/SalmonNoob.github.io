@@ -1,0 +1,47 @@
+<head>
+    <style type="text/css">
+        .comic {
+            font-family: "Comic Sans MS";
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<p>
+    <img alt="" src="https://salmonnoob.github.io/hi.gif" />
+</p>
+
+<p>
+    <span class="comic">What's 9 + 10?</span>
+</p>
+<button onclick="revealFirstLayer()">19</button>
+&nbsp;
+<button onclick="window.location.href='';" type="button">
+    21
+</button>
+<div id="first-layer" style="display: none; margin-top: 10px;">
+  <p>Wow! You just won a prize!</p>
+  <button class="btn" onclick="window.location.href='https://salmonnoob.github.io/prize.mp3';">
+      Claim Prize
+  </button>
+</div>
+
+<script>
+    function revealFirstLayer() {
+        document.getElementById("first-layer").style.display = "block";
+    }
+
+    function revealSecondLayer() {
+        document.getElementById("second-layer").style.display = "block";
+    }
+</script>
+&nbsp;
